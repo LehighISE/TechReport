@@ -23,7 +23,12 @@
 \def\titlepage{
   \thispagestyle{empty}
   \begin{center}
-    \includegraphics[scale=0.35]{header-ISE.jpg}
+    \iflegacy 
+	\includegraphics[height=0.8in]{ise.eps}\\
+   \else
+        \includegraphics[scale=0.35]{header-ISE.jpg} \\
+   \fi
+
 %    \vskip 0.4in
     \vfill
     \huge
