@@ -20,9 +20,9 @@
 \renewcommand{\thanks}[1]{}
 \let\oldtabular\tabular
 \let\oldendtabular\endtabular
-\renewenvironment{tabular}[2][]{\begin{center}}
-                                   {\end{center}}
 \def\titlepage{
+  \renewenvironment{tabular}[2][]{\begin{center}}
+                                   {\end{center}}
   \thispagestyle{empty}
   \begin{center}
     \iflegacy 
@@ -81,3 +81,4 @@
 \let\thanks\oldthanks
 \let\tabular\oldtabular
 \let\endtabular\oldendtabular
+
